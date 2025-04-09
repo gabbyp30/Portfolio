@@ -1,7 +1,22 @@
 /*Home*/
 
+
+
+@keyframes neon {
+  0% { text-shadow: 0 0 5px #00ff00; }
+  50% { text-shadow: 0 0 15px #00ff00; }
+  100% { text-shadow: 0 0 5px #00ff00; }
+}
+
+
+
+
+
+
 .backgorundimage{
   background-size: 50%;
+ 
+
 }
 
 ul {
@@ -9,16 +24,27 @@ ul {
     list-style-type: none;
     margin: 2%;
     padding: 0;
-   
+
     
+  }
+
+  .iul{
+    color: #00ff00;
+    animation: neon 1s infinite alternate;
+
+  }
+
+  .iul li {
+   
+    margin-right: 6%;
   }
   
 
 
-  li{
+  /* li{
     margin: 6%;
     margin-right: 80%;
-  }
+  } */
 
 
   a {
@@ -41,8 +67,7 @@ ul {
         font-family: "Calligraffitti", cursive;
         font-weight: 600;
         font-style: normal;
-        color: rgb(65, 65, 65);
-      
+        color: rgb(151, 149, 149);
         
 
       }
@@ -52,7 +77,16 @@ ul {
           font-weight: 400;
           font-style: normal;
           color: rgb(85, 80, 80);
+          position: absolute;
+      
+        top: -50px;
+        left: 50%;
+        width: 30px;
+        height: 30px;
         
+  
+        
+
       }
     
 
@@ -75,14 +109,18 @@ ul {
     position: fixed;
     bottom: 70px;
     text-align: right;
+    color: #00ff00;
+    animation: neon 1s infinite alternate;
+
+    
 }
 
 footer.container{
   margin-top: 21%;
 }
 
-      
-  /*PROJECTS*/
+/*PROJECTS*/
+
   @keyframes slideIn {
     from {
         transform: translateX(-100%);
@@ -92,38 +130,170 @@ footer.container{
         transform: translateX(0);
         opacity: 1;
     }
+  }
+  @keyframes flip {
+    0% {
+      transform: rotateY(0);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+
+body{
+  
+    margin: 0; /* Removes default margin to ensure full coverage */
+    height: 100vh; /* Sets the height of the viewport */
+    
+    /* Background Image Styles */
+    background-image: url('your-image.jpg'); /* Replace 'your-image.jpg' with your image file path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image nicely */
+  
+
 }
 
 .project{
   margin-top: 10%;
 }
 
-.h1p {
-    animation: slideIn 2s ease-in-out;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    margin-top: 10%;
+.pre{
+
+  border-radius: 50%; /* Circle effect */
+  opacity: 0.5;
 }
+
+.blo{
+  border-radius: 50%; /* Circle effect */
+  opacity: 0.5;
+}
+
+.det{
+  border-radius: 50%; /* Circle effect */
+  opacity: 0.5;
+}
+
+
  .project2{
-  display: flex;
-    flex-direction: column; /* Changes layout to vertical */
-    align-items: center; /* Centers images horizontally */
-    gap: 10px;
- }
+  animation: slideIn 2s ease-in-out;
+  writing-mode: vertical-rl;
+  margin-left: 100%;
+  margin-top: 49%;
+    }
+  
+  img{
+    filter: grayscale(100%);
+
+  }
+
+ 
 
  .listp{
-  position: absolute; /* Allows you to position the element */
-  top: 0; /* Moves the list to the top of the page */
-  left: 0; /* Aligns the list to the left */
-  width: 100%; /* Optional: makes the list span the full width */
-  margin: 0; /* Resets any default margin */
-  padding: 10px; /* Adds some padding */
+ text-decoration: none;
+
  
 }
  
 
   /*Contact*/
-  .contact{margin-bottom: 6%;
-  margin-left: 42%;
+.contact{
+  text-decoration: none;
 }
 
+ /*ABOUT*/
+
+ .about {
+  background-image: url('./Images/Black\ Minimalist\ Rain\ Middle\ Night\ Music\ Album\ YouTube\ Thumbnail.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.meet{
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 6%;
+}
+
+.selfie{
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  display: block;
+  margin-left: 5%;
+  opacity: 0.5;
+}
+
+.meet{
+  margin-left: 12%;
+}
+
+.gabby{
+    margin-left: 11%;
+    color: antiquewhite;
+    font-family: "Codystar", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
+
+.passionate{
+  margin-top: 2%;
+  color: rgba(250, 235, 215, 0.733);
+}
+
+.languages{
+    margin-left: 25%;
+    margin-top: -19%;
+}
+
+.prog{
+  display: inline;
+}
+
+.java{
+  display: inline;
+}
+
+.key{
+  color: antiquewhite;
+}
+
+.hand{
+  color: grey;
+}
+
+.prog2{
+  color: antiquewhite;
+}
+
+.java{
+  color: gray;
+}
+
+.lang4{
+  color: grey;
+}
+
+.eng{
+  color: antiquewhite;
+}
+
+.work{
+  color: grey;
+}
+
+.one{
+  color: grey;
+}
+
+@media (max-width: 768px) {
+  body {
+      font-size: 16px;
+  }
+}
