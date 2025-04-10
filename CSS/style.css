@@ -297,3 +297,55 @@ body{
       font-size: 16px;
   }
 }
+
+.blo{
+  width: 300px;
+  height: 250px;
+  background-color: gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  margin-top: 20%;
+  
+}
+
+.pre{
+  width: 300px;
+  height: 250px;
+  background-color: gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  margin-top: 20%;
+  
+}
+
+.det{
+  width: 300px;
+  height: 250px;
+  background-color: gold;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  margin-top: 20%;
+  
+}
+
